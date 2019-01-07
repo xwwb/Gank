@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="xw.gank.activity.TestActivity">
+    <ImageView
+        android:layout_centerInParent="true"
+        android:text="过度动画"
+        android:src="@mipmap/books"
+        android:layout_marginTop="@dimen/dp_20"
+        android:transitionName="@string/image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

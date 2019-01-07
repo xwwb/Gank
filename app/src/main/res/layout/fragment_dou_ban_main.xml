@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.flyco.tablayout.SlidingTabLayout
+        android:id="@+id/douban_sliding_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:background="@color/white"
+        android:visibility="gone"
+        app:tl_textSelectColor="@color/title_layout_color"
+        app:tl_textUnselectColor="@color/text_color"
+        app:tl_textsize="@dimen/sp_14"
+        tl:tl_indicator_color="@color/black" />
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/douban_tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_35"
+        android:background="@color/white"
+        app:tabGravity="center"
+        app:tabIndicatorHeight="2dp"
+        app:tabBackground="@android:color/transparent"
+        app:tabMode="scrollable"
+        app:tabIndicatorColor="@color/title_layout_color"
+        app:tabSelectedTextColor="@color/title_layout_color"
+        app:tabTextAppearance="@style/GankTabLayoutTextSize"
+        app:tabTextColor="@color/text_color" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/douban_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/douban_tab_layout" />
+</RelativeLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="xw.gank.activity.DialogActivity">
+    <Button
+        android:id="@+id/button"
+        android:text="仿ios底部弹出有标题"
+        android:layout_margin="@dimen/dp_6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+<Button
+    android:id="@+id/button1"
+    android:text="仿ios底部弹出无标题"
+    android:layout_margin="@dimen/dp_6"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/button2"
+        android:layout_margin="@dimen/dp_6"
+        android:text="常规的MaterialDialog "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/button3"
+        android:layout_margin="@dimen/dp_6"
+        android:text="NormalListDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/button4"
+        android:layout_margin="@dimen/dp_6"
+        android:text="NormalListDialogTwo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

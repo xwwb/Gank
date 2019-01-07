@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/status_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_25"
+        android:background="#218868"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/title_bar"
+        android:background="#218868"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50">
+
+        <LinearLayout
+            android:id="@+id/title_left_linearlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:id="@+id/title_leftIco"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp_15"
+                android:layout_marginRight="@dimen/dp_15"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/sp_20" />
+
+        <ImageView
+            android:id="@+id/title_rightIco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="@dimen/dp_15"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/right_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="@dimen/dp_15"
+            android:visibility="gone" />
+    </RelativeLayout>
+</LinearLayout>

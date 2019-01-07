@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="xw.gank.activity.OtherGankDeatilsActivity">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_25"
+        android:background="@color/title_layout_color" />
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/other_gank_details_toobar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_below="@+id/view"
+        android:background="@color/title_layout_color"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:navigationIcon="@mipmap/ic_arrow_back"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:titleTextColor="@color/white">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="@dimen/dp_200"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_16" />
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/empty_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/other_gank_details_toobar_webview">
+
+        <include layout="@layout/recycleview_empty_layout" />
+    </RelativeLayout>
+
+    <xw.gank.custom.ProgressBarWebView
+        android:id="@+id/other_gank_details_toobar_webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/other_gank_details_toobar"
+        android:visibility="gone" />
+</RelativeLayout>

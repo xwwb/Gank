@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xw.gank">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="xw.gank.activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="xw.gank.activity.SearchActivity" />
+        <activity android:name="xw.gank.activity.DialogActivity" />
+        <activity android:name="xw.gank.activity.RegisterActivity" />
+        <activity android:name="xw.gank.activity.MoveDetailsActivity" />
+        <activity android:name="xw.gank.activity.AnimateActivity" />
+        <activity android:name="xw.gank.activity.PhotoDetailsActivity" />
+
+        <service android:name="xw.gank.service.DataService" />
+
+        <activity android:name="xw.gank.activity.RetrofitActivity" />
+        <activity android:name="xw.gank.activity.TestActivity" />
+        <activity android:name="xw.gank.activity.DouBanActivity" />
+        <activity android:name="xw.gank.activity.OtherGankDeatilsActivity" />
+        <activity android:name="xw.gank.activity.SearchActivity2" />
+        <activity android:name="xw.gank.activity.GankMoveActivity" />
+        <activity android:name="xw.gank.activity.SnackBarActivity" />
+        <activity android:name="xw.gank.activity.WelComeActivity" />
+        <activity android:name="xw.gank.activity.LoginActivity"></activity>
+    </application>
+
+</manifest>

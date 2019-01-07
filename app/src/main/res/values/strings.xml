@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Gank</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="network_error">网络异常</string>
+    <!-- 共享过度动画 -->
+    <string name="transition_photos">transition_animation_news_photos</string>
+    <string name="share">分享</string>
+    <string name="save">保存</string>
+    <string name="set_wallpaper">设为壁纸</string>
+    <string name="refresh">刷新</string>
+    <string name="copy_url">复制地址</string>
+    <string name="browser_open">浏览器打开</string>
+
+
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur magna tortor, semper eu feugiat eu, vehicula vitae lacus.</string>
+    <string name="image">image</string>
+
+    <string name="news">新闻</string>
+    <string name="photo">图片</string>
+    <string name="video">视频</string>
+    <string name="tools">设置</string>
+
+    <string name="night_mode">夜间模式</string>
+    <string name="sharedView">sharedView</string>
+    <string name="share_contents">来自「Gank」的分享：%1$s %2$s</string>
+    <string name="android">Android</string>
+    <string name="copy_success">复制成功</string>
+    <string name="rest_video">休息视频</string>
+    <string name="celebrated_dictum">勿慌勿乱,勿喜勿悲!</string>
+    <string name="form_username">手机号</string>
+    <string name="form_password">密码</string>
+    <string name="login">登录</string>
+    <string name="snackbar">SnackBar</string>
+    <string name="register">注册</string>
+    <string name="repassword">再次输入密码</string>
+
+</resources>

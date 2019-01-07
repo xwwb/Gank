@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="xw.gank.activity.GankMoveActivity">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_25"
+        android:background="@color/title_layout_color" />
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_below="@+id/view"
+        android:background="@color/title_layout_color"
+        android:minHeight="?attr/actionBarSize"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:navigationIcon="@mipmap/ic_arrow_back"
+        app:popupTheme="@style/Theme.AppCompat.DayNight.DarkActionBar"
+        app:title="@string/rest_video"
+        app:titleTextColor="@color/white" />
+
+<RelativeLayout
+    android:layout_below="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+
+        layout="@layout/smartrefresh_layout" />
+</RelativeLayout>
+
+</RelativeLayout>

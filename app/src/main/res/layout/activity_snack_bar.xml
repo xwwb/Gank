@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="xw.gank.activity.SnackBarActivity">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/snackbar_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<android.support.design.widget.AppBarLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view"
+        android:background="@color/title_layout_color"
+        android:elevation="@dimen/dp_4"
+        android:minHeight="?attr/actionBarSize"
+        app:titleTextColor="@color/white">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="@string/snackbar"
+            android:textSize="@dimen/sp_20" />
+    </android.support.v7.widget.Toolbar>
+</android.support.design.widget.AppBarLayout>
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/snackbar_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|bottom"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            app:borderWidth="0dp"
+            app:fabSize="normal" />
+
+    </android.support.design.widget.CoordinatorLayout>
+</android.support.constraint.ConstraintLayout>
