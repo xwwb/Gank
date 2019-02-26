@@ -8,7 +8,6 @@ import android.graphics.Color;
 import android.os.Build;
 import android.os.Handler;
 import android.support.annotation.NonNull;
-import android.support.annotation.RequiresApi;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.ActivityOptionsCompat;
 import android.support.v7.widget.DefaultItemAnimator;
@@ -41,7 +40,7 @@ import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.disposables.Disposable;
 import io.reactivex.schedulers.Schedulers;
 import xw.gank.adapter.RetorfitRecycleViewAdapter;
-import xw.gank.callback.IntentServiceCallBack;
+import xw.gank.CallBack.IntentServiceCallBack;
 import xw.gank.info.GankModel;
 import xw.gank.info.GirlItemData;
 import xw.gank.retrofit.ApiService;
@@ -211,7 +210,6 @@ public class RetrofitActivity extends MyBaseActivity implements OnLoadMoreListen
 
     @Override
     public int getLayoutId() {
-
         getWindow().requestFeature(Window.FEATURE_ACTIVITY_TRANSITIONS);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             getWindow().setEnterTransition(new Explode());
@@ -295,6 +293,7 @@ public class RetrofitActivity extends MyBaseActivity implements OnLoadMoreListen
      * 全透状态栏
      */
     protected void setStatusBarFullTransparent() {
+
         if (Build.VERSION.SDK_INT >= 21) {//21表示5.0
             Window window = getWindow();
             window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
@@ -308,6 +307,4 @@ public class RetrofitActivity extends MyBaseActivity implements OnLoadMoreListen
             //getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION);
         }
     }
-
-
 }

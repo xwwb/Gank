@@ -42,8 +42,6 @@ import xw.gank.request.Top250MoveRequest;
  * A simple {@link Fragment} subclass.
  */
 public class Top250Fragment extends LazyloadFragment implements RequestListern, OnRefreshListener, OnLoadMoreListener {
-
-
     @BindView(R.id.recycle_view)
     RecyclerView recycleView;
     Unbinder unbinder;

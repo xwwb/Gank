@@ -1,7 +1,7 @@
 package xw.gank.Presenter;
 
-import xw.gank.callback.IPresenter;
-import xw.gank.callback.IView;
+import xw.gank.CallBack.IPresenter;
+import xw.gank.CallBack.IView;
 
 public abstract class BasePresenter <T extends IView> implements IPresenter<T> {
     protected T mView;

@@ -35,8 +35,6 @@ import xw.gank.retrofit.RetrofitUtils;
 import xw.gank.utils.RegexUtils;
 
 public class LoginActivity extends MyBaseActivity {
-
-
     @BindView(R.id.toolbar)
     Toolbar toolbar;
     @BindView(R.id.et_account)

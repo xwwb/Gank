@@ -37,6 +37,7 @@
                     app:navigationIcon="@mipmap/ic_arrow_back"
                     android:minHeight="?attr/actionBarSize"
                     app:layout_scrollFlags="scroll|enterAlways"
+                    app:titleTextColor="@color/white"
                     app:popupTheme="@style/Theme.AppCompat.DayNight.DarkActionBar"
                     app:title="图片" />
             </LinearLayout>

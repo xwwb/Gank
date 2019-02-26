@@ -2,7 +2,7 @@ package xw.gank.utils;
 
 import java.util.List;
 
-import xw.gank.callback.IntentServiceCallBack;
+import xw.gank.CallBack.IntentServiceCallBack;
 import xw.gank.info.GirlItemData;
 
 public class CallBackUtils {

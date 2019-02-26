@@ -87,6 +87,29 @@ dependencies {
     implementation 'com.github.chrisbanes:PhotoView:2.0.0'
     implementation 'com.github.clans:fab:1.6.4'
     implementation 'com.github.AnJiaoDe:MultiFlowLayout:V1.1.2'
-    implementation'skin.support:skin-support:3.1.1'
+    implementation 'skin.support:skin-support:3.1.1'
     implementation 'skin.support:skin-support-design:3.1.1'
+//    implementation project(':dkplayer-java')
+//    implementation project(':dkplayer-ui')
+//    implementation project(':dkplayer-armv7a')
+//    implementation project(':dkplayer-arm64')
+//    implementation project(':dkplayer-armv5')
+//    implementation project(':dkplayer-x86')
+//    implementation project(':dkplayer-x86_64')
+//    implementation 'com.google.android.exoplayer:exoplayer:2.8.2'
+//    implementation 'com.google.android.exoplayer:extension-rtmp:2.8.2'
+//    implementation 'com.github.dueeeke.dkplayer:dkplayer-java:2.5.4'
+//    implementation 'com.github.dueeeke.dkplayer:dkplayer-armv7a:2.5.4'
+//
+// //   # 可选，用于兼容一些其他的CPU架构
+//    implementation 'com.github.dueeeke.dkplayer:dkplayer-armv5:2.5.4'
+//    implementation 'com.github.dueeeke.dkplayer:dkplayer-arm64:2.5.4'
+//    implementation 'com.github.dueeeke.dkplayer:dkplayer-x86:2.5.4'
+//    implementation 'com.github.dueeeke.dkplayer:dkplayer-x86_64:2.5.4'
+//
+//   // # 可选，里面包含StandardVideoController的实现
+//    implementation 'com.github.dueeeke.dkplayer:dkplayer-ui:2.5.4'
+    implementation 'cn.jzvd:jiaozivideoplayer:6.0.0'
+
+    implementation 'com.shuyu:GSYVideoPlayer:5.0.1'
 }

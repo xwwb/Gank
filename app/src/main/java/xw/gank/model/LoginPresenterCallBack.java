@@ -1,7 +1,6 @@
 package xw.gank.model;
 
-import xw.gank.callback.CallBack;
-import xw.gank.callback.IModel;
+import xw.gank.CallBack.CallBack;
 
 public class LoginPresenterCallBack implements LoginModelCallBack {
 

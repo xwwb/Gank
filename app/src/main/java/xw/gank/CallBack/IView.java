@@ -1,4 +1,4 @@
-package xw.gank.callback;
+package xw.gank.CallBack;
 
 public interface IView {
 

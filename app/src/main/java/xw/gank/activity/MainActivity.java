@@ -146,6 +146,17 @@ public class MainActivity extends MyBaseActivity implements NavigationView.OnNav
                 }
                 drawerlayout.closeDrawer(GravityCompat.START);
                 break;
+            case R.id.kaiyan_video:
+                intent.setClass(this, FirstVideoActivity.class);
+                intent.setFlags(flag);
+                //      startActivity(intent);
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                    startActivity(intent, ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
+                } else {
+                    startActivity(intent);
+                }
+                drawerlayout.closeDrawer(GravityCompat.START);
+                break;
 
 
         }

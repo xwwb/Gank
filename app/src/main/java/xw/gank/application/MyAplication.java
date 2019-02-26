@@ -3,10 +3,6 @@ package xw.gank.application;
 import android.app.Application;
 import android.support.v7.app.AppCompatDelegate;
 
-import skin.support.SkinCompatManager;
-import skin.support.design.SkinMaterialManager;
-import skin.support.design.app.SkinMaterialViewInflater;
-
 public class MyAplication extends Application {
     @Override
     public void onCreate() {
@@ -19,7 +15,11 @@ public class MyAplication extends Application {
 //            .setSkinStatusBarColorEnable(false)                  //关闭状态栏换肤，默认打开[可选]
 //            .setSkinWindowBackgroundEnable(false)                  //关闭windowBackground换肤，默认打开[任选]
 //            .loadSkin();
-
-
+//        if (LeakCanary.isInAnalyzerProcess(this)) {
+//            return;
+//        }
+//        LeakCanary.install(this);
+//        //播放器日志
+//        L.setDebug(BuildConfig.DEBUG);
     }
 }

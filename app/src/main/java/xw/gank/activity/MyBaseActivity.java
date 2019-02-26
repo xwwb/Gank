@@ -21,7 +21,6 @@ import butterknife.Unbinder;
 import xw.gank.retrofit.RetrofitUtils;
 
 public abstract class MyBaseActivity extends AppCompatActivity {
-
     public ImmersionBar immersionBar;
     private LoadingDailog dialog;
     private LoadingDailog.Builder builder;

@@ -40,7 +40,7 @@ import io.reactivex.disposables.Disposable;
 import io.reactivex.schedulers.Schedulers;
 import xw.gank.activity.PhotoDetailsActivity;
 import xw.gank.adapter.RetorfitRecycleViewAdapter;
-import xw.gank.callback.IntentServiceCallBack;
+import xw.gank.CallBack.IntentServiceCallBack;
 import xw.gank.info.GankModel;
 import xw.gank.info.GirlItemData;
 import xw.gank.retrofit.ApiService;

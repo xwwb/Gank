@@ -189,28 +189,55 @@ public class RetrofitUtils {
 
     public static Retrofit getDouBanMoiveInstance(Context context, String url) {
         mContext = context;
-            OkHttpClient.Builder builder = new OkHttpClient.Builder();
-            //  builder.addInterceptor(addQueryParameterInterceptor());
-            //   builder.addInterceptor(addHeaderInterceptor());
-            // 设置缓存
-            File cacheFile = new File(mContext.getExternalCacheDir(), "DouBanMoiveCache");
-            Cache cache = new Cache(cacheFile, 1024 * 1024 * 50);
-            builder.cache(cache).addInterceptor(addCacheInterceptor());
+        OkHttpClient.Builder builder = new OkHttpClient.Builder();
+        //  builder.addInterceptor(addQueryParameterInterceptor());
+        //   builder.addInterceptor(addHeaderInterceptor());
+        // 设置缓存
+        File cacheFile = new File(mContext.getExternalCacheDir(), "DouBanMoiveCache");
+        Cache cache = new Cache(cacheFile, 1024 * 1024 * 50);
+        builder.cache(cache).addInterceptor(addCacheInterceptor());
 
-            //设置超时
-            builder.connectTimeout(1, TimeUnit.SECONDS);
-            builder.readTimeout(6, TimeUnit.SECONDS);
-            builder.writeTimeout(6, TimeUnit.SECONDS);
-            //错误重连
-            builder.retryOnConnectionFailure(true);
+        //设置超时
+        builder.connectTimeout(1, TimeUnit.SECONDS);
+        builder.readTimeout(6, TimeUnit.SECONDS);
+        builder.writeTimeout(6, TimeUnit.SECONDS);
+        //错误重连
+        builder.retryOnConnectionFailure(true);
 
-            OkHttpClient client = builder.build();
-           Retrofit retrofit = new Retrofit.Builder()
-                    .baseUrl(url)
-                    .addConverterFactory(GsonConverterFactory.create())
-                    .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
-                    .client(client)
-                    .build();
+        OkHttpClient client = builder.build();
+        Retrofit retrofit = new Retrofit.Builder()
+                .baseUrl(url)
+                .addConverterFactory(GsonConverterFactory.create())
+                .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
+                .client(client)
+                .build();
+
+        return retrofit;
+    }
+    public static Retrofit getFirstVideoInstance(Context context) {
+        mContext = context;
+        OkHttpClient.Builder builder = new OkHttpClient.Builder();
+        //  builder.addInterceptor(addQueryParameterInterceptor());
+        //   builder.addInterceptor(addHeaderInterceptor());
+        // 设置缓存
+        File cacheFile = new File(mContext.getExternalCacheDir(), "FirstVideo");
+        Cache cache = new Cache(cacheFile, 1024 * 1024 * 50);
+       // builder.cache(cache).addInterceptor(addCacheInterceptor());
+
+        //设置超时
+        builder.connectTimeout(1, TimeUnit.SECONDS);
+        builder.readTimeout(6, TimeUnit.SECONDS);
+        builder.writeTimeout(6, TimeUnit.SECONDS);
+        //错误重连
+        builder.retryOnConnectionFailure(true);
+
+        OkHttpClient client = builder.build();
+        Retrofit retrofit = new Retrofit.Builder()
+                .baseUrl(ConstantApi.FirstVideo)
+                .addConverterFactory(GsonConverterFactory.create())
+                .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
+                .client(client)
+                .build();
 
         return retrofit;
     }

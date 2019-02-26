@@ -2,6 +2,7 @@ package xw.gank.utils;
 
 import android.content.Context;
 import android.graphics.Bitmap;
+import android.text.TextUtils;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
@@ -21,11 +22,13 @@ public class ImageLoader extends com.youth.banner.loader.ImageLoader {
      * @param iv
      */
     public static void load(Context context, String url, ImageView iv) {
-        Glide.with(context)
-                .load(url)
-                .diskCacheStrategy(DiskCacheStrategy.ALL)//让Glide既缓存全尺寸图片，下次在任何ImageView中加载图片的时候，全尺寸的图片将从缓存中取出，重新调整大小，然后缓存
-                .crossFade()
-                .into(iv);
+        if (!TextUtils.isEmpty(url)) {
+            Glide.with(context)
+                    .load(url)
+                    .diskCacheStrategy(DiskCacheStrategy.ALL)//让Glide既缓存全尺寸图片，下次在任何ImageView中加载图片的时候，全尺寸的图片将从缓存中取出，重新调整大小，然后缓存
+                    .crossFade()
+                    .into(iv);
+        }
     }
 
     public static void load(Context context, String url, ImageView iv, int placeholder, int error) {
